@@ -4,7 +4,7 @@ library(VennDiagram)
 ## listで渡さないとダメなので， 比べたいものをリストにして作成
 EClist = list(Rough=rownames(EC1type), Fine=rownames(EC54types))
 
-## Venn図
+## Venn図 2 groups
 venn.diagram(
   venn_list,
   category.names = c("12w", "72w"),
@@ -22,6 +22,9 @@ venn.diagram(
   filename="VD_commonInteractions_12w_vs72w.png",
   imagetype="png"
 )
+
+
+## Venn図 3 groups
 
 
 ##  lwd	枠線の太さの指定	lwd=c(1,2)
